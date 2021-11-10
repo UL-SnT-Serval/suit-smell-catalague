@@ -1,7 +1,7 @@
 # Catalogue of System User Interactive Tests (SUIT) smells
 
 
-## Army of clones
+## Army of clones ([Example](examples/army-of-clones.robot))
 
 ### Descriptions
 
@@ -13,7 +13,7 @@ Different tests perform and implement similar actions, leading to duplicated pie
 
 - **Maintenance**: The effort to maintain duplicated parts of tests increases. Furthermore, it is difficult to determine where maintenance has to be performed.
 
-## Complicated Setup Scenarios
+## Complicated Setup Scenarios ([Example](examples/complicated-setup.robot))
 
 ### Description
 
@@ -27,7 +27,7 @@ The test performs actions to set the system under test in a valid state for the 
 
 - **Execution**: The more actions against the system under test a test contains, the more chances it has to experience a failure, related or not to what is the real intent of the test.
 
-## Conditional Assertions
+## Conditional Assertions ([Example](examples/conditional-assertion.robot))
 
 ### Descriptions
 
@@ -155,7 +155,7 @@ The domain concept are not used in a consistent way across tests by either using
 
 - **Comprehension**: It is difficult for the future reader to detect similarities between tests.
 
-## Lack of Encapsulation
+## Lack of Encapsulation ([Example](examples\lack-of-encapsulation.robot))
 
 ### Description
 
