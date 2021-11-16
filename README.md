@@ -185,7 +185,7 @@ The test is missing the lifecycle steps of the business objects (e.g. CRUD) and 
 
 - **Maintenance**: When a business object is modified, lots of test have to be updated as a result of the change.
 
-## Long Test Steps ([Example](examples\long-test-step.robot))
+## Long Test Steps ([Example](examples/long-test-step.robot))
 
 ### Description
 
@@ -198,7 +198,7 @@ One or many test steps are very long, performing a lot of actions on the system 
 
 - **Execution**:  With each action on the system under test, there is a chance of something going wrong. The higher this number, the more fragile the test becomes.
 
-## Middle Man ([Example](examples\middle-man.robot))
+## Middle Man ([Example](examples/middle-man.robot))
 
 ### Description
 
@@ -208,7 +208,7 @@ A test component (keyword, macro, function) delegates all its tasks to another t
 
 - **Comprehension**: The levels of indirection make the test harder to follow by future readers.
 
-## Missing Assertion ([Example](examples\missing-assertion.robot))
+## Missing Assertion ([Example](examples/missing-assertion.robot))
 
 ### Description
 
@@ -219,7 +219,7 @@ The test lacks any explicit assertions.
 - **Comprehension**: Future readers are left in the potentially frustrating position of puzzling over the intention of the test.
 
 
-## Narcissistic ([Example](examples\narcissistic.robot))
+## Narcissistic ([Example](examples/narcissistic.robot))
 
 ### Description
 
@@ -229,7 +229,7 @@ The test uses the first person pronoun ***I*** to refer to its actors and does n
 
 - **Comprehension**: The test is harder to read because it is not clear who ***I*** is and what are the roles that ***I*** has.
 
-## Noisy Logging ([Example](examples\noisy-logging.robot))
+## Noisy Logging ([Example](examples/noisy-logging.robot))
 
 ### Description
 
@@ -251,7 +251,7 @@ The test behavior is difficult to understand because the test does not clearly s
 
 - **Maintenance**: It is difficult to determine where to perform changes if hardcoded values are scattered all over the test code. Furthermore, test with high cyclomatic complexity might have side effect overseen during maintenance which might lead to future problems.
 
-## On the Fly ([Example](examples\on-the-fly.robot))
+## On the Fly ([Example](examples/on-the-fly.robot))
 
 ### Description
 
@@ -261,7 +261,7 @@ The test calculates an expected results during its execution instead of relying 
 
 - **Comprehension**: By embedding the business rule in the assertion, the code for the automated test can become as complicated as the system under test.
 
-## Over-Checking ([Example](examples\over-checking.robot))
+## Over-Checking ([Example](examples/over-checking.robot))
 
 ### Description
 
@@ -281,7 +281,7 @@ The description of the step does not give any extra information about its intent
 
 - **Comprehension**: The intention of the step contains a lot of noise making it harder to read.
 
-## Sensitive Locators ([Example](examples\sensitive-locator.robot))
+## Sensitive Locators ([Example](examples/sensitive-locator.robot))
 
 ### Description
 
@@ -291,7 +291,7 @@ The test uses element identification selectors that have long chains to identify
 
 - **Maintenance**: This leads to fragile tests, as any change in that chain from the user interface representation will break the tests.
 
-## Sneaky Checking ([Example](examples\sneaky-checking.robot))
+## Sneaky Checking ([Example](examples/sneaky-checking.robot))
 
 ### Description
 
@@ -301,7 +301,7 @@ The test hides its assertions in actions that are at the wrong level of details.
 
 The future reader is not able to understand what is being tested by just looking at the main steps of the acceptance criteria without a need to inspect how low level details are implemented.
 
-## Stinky Synchronization Syndrome ([Example](examples\stinky-synchronization-syndrome.robot))
+## Stinky Synchronization Syndrome ([Example](examples/stinky-synchronization-syndrome.robot))
 
 
 ### Description
