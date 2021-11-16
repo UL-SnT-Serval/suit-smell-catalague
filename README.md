@@ -155,7 +155,7 @@ The domain concept are not used in a consistent way across tests by either using
 
 - **Comprehension**: It is difficult for the future reader to detect similarities between tests.
 
-## Lack of Encapsulation ([Example](examples\lack-of-encapsulation.robot))
+## Lack of Encapsulation ([Example](examples/lack-of-encapsulation.robot))
 
 ### Description
 
