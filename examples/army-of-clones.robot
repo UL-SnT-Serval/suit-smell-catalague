@@ -1,9 +1,3 @@
-#
-# SMELL NAME: Army of Clone
-#
-# Keyword Open Browser To Login Page from line 12 and Open Again To Login Page from line 17 implement the same code.
-#
-
 *** Test Cases ***
 Valid Login
     Open Browser To Login Page

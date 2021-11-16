@@ -5,5 +5,5 @@ Valid Login
 *** Keywords ***
 Open Browser To Login Page
     Open Browser    http://localhost/    chrome
-    Set Selenium Speed    0" +
+    Set Selenium Speed    0
     Maximize Browser Window

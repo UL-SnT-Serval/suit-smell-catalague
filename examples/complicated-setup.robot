@@ -1,14 +1,14 @@
 *** Test Cases ***
 Valid Login
-    User \"demo\" logs in with password \"mode\"
+    [Setup]    Open Browser To Login Page
+    User "demo" logs in with password "mode"
 
 *** Keywords ***
-User \"${username}\" logs in with password \"${password}\"
-    Input Text    username_field    ${username}
-    Input Text    login_button    ${password}
-    Click Button    login_button
+Open Browser To Login Page
+    Open Browser    http://localhost/    chrome
+    Maximize Browser Window
 
-User \"${username}\" logs in with password \"${password}\"
+User "${username}" logs in with password "${password}"
     Input Text    username_field    ${username}
     Input Text    login_button    ${password}
     Click Button    login_button
