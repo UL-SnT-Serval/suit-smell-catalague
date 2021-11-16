@@ -5,11 +5,9 @@ Valid Login
 
 *** Keywords ***
 Open Browser To Login Page
-    ${jsonfile}    Get File
-    ${username}    Get Json Value    ${jsonfile}    /usr1/username
-    Set Suite Variable    ${username}
-    ${password}    Get Json Value    ${password}    /usr1/username
-    Set Suite Variable    ${password}
+    ${jsonfile}=    Get File     /file/path/data.json
+    Set Suite Variable    ${jsonfile.username}
+    Set Suite Variable    ${jsonfile.password}
     Open Browser    http://localhost/    chrome
     Maximize Browser Window
 
